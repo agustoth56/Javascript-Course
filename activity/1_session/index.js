@@ -1,5 +1,7 @@
 // Ejercicio 1
 
+document.write('<script src="aboutme.js"></script>');
+
 console.log("Ejercicio 1");
 
 // Ejercicio 2
