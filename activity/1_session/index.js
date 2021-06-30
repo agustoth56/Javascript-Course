@@ -1,6 +1,9 @@
 // Ejercicio 1
 
-document.write('<script src="aboutme.js"></script>');
+//import del archivo JS aboutme.js
+var js = document.createElement("script");
+js.src = "aboutme.js";
+document.body.appendChild(js);
 
 console.log("Ejercicio 1");
 
