@@ -62,6 +62,23 @@ console.log(ej5);
 var ej6 = `Ejercicio 6: 
 
 `;
+
+var arg2 = " World";
+var formatter = {
+    prefix:"Hello",
+    append(argum) {
+        return formatter.prefix+=argum;
+    },
+    toLowerCase(argum2){
+        return argum2.toLowerCase(argum2);
+    }
+}
+
+ej6+='Part1: '+formatter.append(" World");
+ej6+='\nPart2: '+formatter.toLowerCase("Hi, I'm Agustin");
+
 console.log(ej6);
+
+
 
 
