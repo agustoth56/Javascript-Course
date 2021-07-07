@@ -174,9 +174,9 @@ const failureAsync = document.getElementById('loginFailureAsync');
   .catch( (rejected) => {
     console.log(rejected);
   })
-}*/
+}
 
-/*async function asyncFailure(){
+async function asyncFailure(){
   var login = {user: "pepe",pass: "bad"};
   loginWitUsername(login.user, login.pass)
   .then( (resolved) => {
@@ -188,6 +188,7 @@ const failureAsync = document.getElementById('loginFailureAsync');
 }*/
 
 // Y esta seria con la solucion del await
+
 async function asyncSuccess() {
   var login = {user: "admin",pass: "passwd"};
   var resolved = await loginWitUsername(login.user, login.pass)
@@ -196,8 +197,8 @@ async function asyncSuccess() {
 
 async function asyncFailure(){
   var login = {user: "pepe",pass: "bad"};
-  var resolved = await loginWitUsername(login.user, login.pass)
-  console.log(resolved);
+  var rejected = await loginWitUsername(login.user, login.pass)
+  console.log(rejected);
 }
 
 
