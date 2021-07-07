@@ -192,13 +192,13 @@ async function asyncFailure(){
 async function asyncSuccess() {
   var login = {user: "admin",pass: "passwd"};
   var resolved = await loginWitUsername(login.user, login.pass)
-  console.log(resolved);
+  alert(resolved);
 }
 
 async function asyncFailure(){
   var login = {user: "pepe",pass: "bad"};
   var rejected = await loginWitUsername(login.user, login.pass)
-  console.log(rejected);
+  alert(rejected);
 }
 
 
