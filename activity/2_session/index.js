@@ -155,7 +155,7 @@ let loginWitUsername = (username, password) => {
         if (username === "admin" && password === "passwd") {
           resolve("User logged in");
         } else {
-          rejected("Error: invalid username or password!!");
+          rejected("Error: invalid username or password");
         }
       }, 200);
     });
