@@ -190,15 +190,24 @@ async function asyncFailure(){
 // Y esta seria con la solucion del await
 
 async function asyncSuccess() {
-  var login = {user: "admin",pass: "passwd"};
-  var resolved = await loginWitUsername(login.user, login.pass)
-  alert(resolved);
+  try {
+    var login = {user: "admin",pass: "passwd"};
+    var resolved = await loginWitUsername(login.user, login.pass)
+    alert(resolved);
+  } catch(e) {
+    alert(e);
+  }
+  
 }
 
 async function asyncFailure(){
-  var login = {user: "pepe",pass: "bad"};
-  var rejected = await loginWitUsername(login.user, login.pass)
-  alert(rejected);
+  try {
+    var login = {user: "pepe",pass: "bad"};
+    var resolved = await loginWitUsername(login.user, login.pass)
+    alert(resolved);
+  } catch(e) {
+    alert(e);
+  }
 }
 
 
